@@ -2,10 +2,9 @@
 
 int main()
 {
-	struct ADDRESS_BOOK addrbook;
 	ShowMenu();
-
 	int select = 0;
+	struct ADDRESS_BOOK addrbook;
 
 	while (true)
 	{
@@ -20,20 +19,20 @@ int main()
 			ShowContacts(&addrbook);
 			break;
 		case 3:
-
+			DeleteContact(&addrbook);
 			break;
 		case 4:
-
+			FindContact(&addrbook);
 			break;
 		case 5:
-
+			ModifyContact(&addrbook);
 			break;
 		case 6:
-
+			ClearContacts(&addrbook);
 			break;
 		case 0:
 			system("cls");
-			cout << "Welcome to use again!" << endl;
+			cout << "Look forward to your next use!" << endl;
 			return 0;
 		default:
 			break;

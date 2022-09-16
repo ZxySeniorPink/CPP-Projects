@@ -29,6 +29,7 @@ struct ADDRESS_BOOK
 	int m_Size = 0;
 };
 
+
 //显示通讯录管理系统菜单
 void ShowMenu();
 
@@ -38,15 +39,18 @@ void AddContact(struct ADDRESS_BOOK* addrbook);
 //显示联系人
 void ShowContacts(struct ADDRESS_BOOK* addrbook);
 
+//查看联系人是否存在
+int IsExist(struct ADDRESS_BOOK* addrbook, string name);
+
 //删除联系人
-void DeleteContact();
+void DeleteContact(struct ADDRESS_BOOK* addrbook);
 
 //查找联系人
-void FindContact();
+void FindContact(struct ADDRESS_BOOK* addrbook);
 
 //修改联系人
-void ModifyContact();
+void ModifyContact(struct ADDRESS_BOOK* addrbook);
 
 //清空联系人
-void ClearContacts();
+void ClearContacts(struct ADDRESS_BOOK* addrbook);
 
