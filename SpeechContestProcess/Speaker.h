@@ -8,9 +8,9 @@ class Speaker
 {
 public:
 
-	//姓名
+	//濮撳悕
 	string m_Name;
 
-	//分数，有两轮得分
+	//鍒嗘暟锛屾湁涓よ疆寰楀垎
 	double m_Score[2];
 };
